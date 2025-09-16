@@ -165,11 +165,14 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 2rem;
             margin-top: 4rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
         .service-card {
             background: white;
             padding: 2rem;
