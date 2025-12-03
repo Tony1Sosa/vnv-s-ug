@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VNV & S UG - Zuverlässige Reinigungs- und Entsorgungsdienstleistungen</title>
+    <title>VNV & E S Tsveti Gavrilova - Zuverlässige Reinigungs- und Entsorgungsdienstleistungen</title>
     <style>
         * {
             margin: 0;
@@ -366,6 +366,105 @@
         .gallery-item:hover img {
             transform: scale(1.05);
         }
+
+        /* Metal Types Section */
+        .metal-types {
+            background: white;
+            padding: 60px 0;
+            margin-top: -20px;
+        }
+
+        .metal-types-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8edff 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .metal-types h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .metal-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .metal-list li {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .metal-list li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .metal-list li::before {
+            content: '✓';
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            min-width: 25px;
+        }
+
+        .highlight-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .highlight-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .highlight-feature::before {
+            content: '✓';
+            display: block;
+            color: #28a745;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-feature strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-feature p {
+            color: #666;
+            font-size: 0.95rem;
+        }
         
         /* Contact Section */
         .contact {
@@ -575,6 +674,18 @@
                 flex: 1;
                 max-width: 200px;
             }
+
+            .metal-list {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-features {
+                grid-template-columns: 1fr;
+            }
+
+            .metal-types-content {
+                padding: 2rem 1.5rem;
+            }
         }
 
         /* Special Discount Banner */
@@ -771,152 +882,42 @@
                     <img src="iliikata/24.jpg" />
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 2rem; color: #666;">
-                
-            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Metal Types Section -->
+    <section class="metal-types">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Kontaktieren Sie uns noch heute!</h2>
-                    <p>Haben Sie Fragen oder möchten ein Angebot? Kontaktieren Sie uns noch heute - wir helfen Ihnen gerne bei Reinigung, Bau und Metallsammlung.</p>
-                    <ul class="contact-details">
-                        <li>
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <strong>Adresse:</strong><br>
-                                <a href="https://www.google.com/maps/search/?api=1&query=Schützenstraße+45+56068+Germany" class="contact-link" target="_blank">Schützenstraße 45, 56068</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contact-icon">📞</div>
-                            <div>
-                                <strong>Telefon:</strong><br>
-                                <a href="tel:+4915235888889" class="contact-link">+49 1523 5888889</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contact-icon">💬</div>
-                            <div>
-                                <strong>WhatsApp:</strong><br>
-                                <a href="https://wa.me/4917257832268" class="contact-link" target="_blank">+49 172 5783226</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contact-icon">✉️</div>
-                            <div>
-                                <strong>E-Mail:</strong><br>
-                                <a href="mailto:vnvs.ug@gmail.com" class="contact-link">vnvs.ug@gmail.com</a><br>
-                                <a href="mailto:vnv7se@gmail.com" class="contact-link">vnv7se@gmail.com</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact-cta">
-                    <h3>Rufen Sie uns jetzt an!</h3>
-                    <p>Für eine schnelle Beratung und kostenloses Angebot</p>
-                    <div class="cta-buttons">
-                        <a href="tel:+4915235888889" class="cta-phone">
-                            📞 Jetzt anrufen
-                        </a>
-                        <a href="https://wa.me/4917257832268" class="cta-whatsapp" target="_blank">
-                            💬 WhatsApp schreiben
-                        </a>
-                    </div>
-                    <div class="business-hours">
-                        <h4>Öffnungszeiten:</h4>
-                        <p>Montag - Freitag: 24/7 Uhr<br>
-                        Samstag: 24/7 Uhr<br>
-                        Sonntag: Notdienst verfügbar<br>
-                        Text auf WhatsApp oder per E-Mail</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 VNV & SUG. Alle Rechte vorbehalten. | Zuverlässige Dienstleistungen in Deutschland</p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        // Gallery filter functionality
-        function filterGallery(category) {
-            const items = document.querySelectorAll('.gallery-item');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            // Update active button
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            // Filter items
-            items.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.style.display = 'flex';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+            <div class="metal-types-content">
+                <h3>Wir kaufen folgende Metalle an:</h3>
+                <ul class="metal-list">
+                    <li>Kupferschrott</li>
+                    <li>Kupfer Millbery</li>
+                    <li>Kupfer Bleche</li>
+                    <li>Kupferkabel</li>
+                    <li>Messing</li>
+                    <li>Aluminium</li>
+                    <li>Zink</li>
+                    <li>Blei</li>
+                    <li>Zinn</li>
+                    <li>Edelstahl</li>
+                </ul>
                 
-                // Close mobile menu if open
-                document.querySelector('.nav-links').classList.remove('active');
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe service cards
-        document.querySelectorAll('.service-card').forEach(card => {
-            observer.observe(card);
-        });
-
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
-        });
-    </script>
-</body>
-</html>
+                <div class="highlight-features">
+                    <div class="highlight-feature">
+                        <strong>Ankauf bereits ab 1 KG</strong>
+                        <p>Keine Mindestmenge erforderlich</p>
+                    </div>
+                    <div class="highlight-feature">
+                        <strong>Jeder Kunde ist Willkommen!</strong>
+                        <p>Privat oder Gewerblich</p>
+                    </div>
+                    <div class="highlight-feature">
+                        <strong>Barkasse</strong>
+                        <p>Sofortige Bezahlung vor Ort</p>
+                    </div>
+                    <div class="highlight-feature">
+                        <strong>Direkte Annahme</strong>
+                        <p>Ohne Wartezeiten</p>
+                    </div>
+                </div
